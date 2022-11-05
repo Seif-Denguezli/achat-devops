@@ -40,11 +40,11 @@ services:
     ports:
       - 4200:80
   sonarqube:
-    image: sonarqube
+    image: sonarqube:8.9.7-community
     volumes:
-      - sonarqube_data:/opt/sonarqube/data
-      - sonarqube_extensions:/opt/sonarqube/extensions
-      - sonarqube_logs:/opt/sonarqube/logs
+      - sonarqube_data2:/opt/sonarqube/data
+      - sonarqube_extensions2:/opt/sonarqube/extensions
+      - sonarqube_logs2:/opt/sonarqube/logs
     ports:
       - "9000:9000"
       - "9092:9092"
@@ -57,6 +57,6 @@ services:
 volumes:
   db:
   nexus-data:
-  sonarqube_data:
-  sonarqube_extensions:
-  sonarqube_logs:
+  sonarqube_data2:
+  sonarqube_extensions2:
+  sonarqube_logs2:
