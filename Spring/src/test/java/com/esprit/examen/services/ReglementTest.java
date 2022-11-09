@@ -55,14 +55,7 @@ import static org.junit.jupiter.api.Assertions.*;
         assertNotNull(reg2);
     }
 
-    @Test
-    void getChiffreAffaireEntreDeuxDateTest() {
-        Date date1 = new Date(2022, 11, 9);
-        Date date2 = new Date(2022, 11, 10);
-        float ca = 0;
-        ca = reglementService.getChiffreAffaireEntreDeuxDate(date1, date2);
-        assertTrue(ca > 0);
-    }
+
 
 
 
